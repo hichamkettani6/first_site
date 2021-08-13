@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> titre de ma page web </title>
+</head>  
+<body bgcolor="yellow">
+	<i>
+		<b>
+			<u>
+				<s>
+					Bonjour
+				</s>
+			</u>
+	    </b>
+    </i>
+	<br>
+	<font color="#FF0088" face="verdana" size="5">
+		<!-- face permet de spécifier la police du text y compris (verdana, arial,..)-->
+		<!--size permet de changer la police du text de 1 jusqu'à 7 (3 est par défault)-->
+		<!--color(RGB) en hexa-decimal est #++++++ (# signifie l'exa-decimal)-->
+		bonsoir à tous
+	</font>
+	<br>
+	x<sup>2</sup>   <!--mettre en exposant-->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	H<sub>2</sub>O  <!--mettre en indice-->
+	<pre>
+		Grace à pre on peut faire des espaces comme-t-on veut
+		h   i    c     h      a       m
+	</pre>
+	<p align="justify">ciao mi chiamo hicham, ho venti anni, il mio preferito sport è calcio , sono studente vivo in marocco e piaccio progrmmare..</p> <!-- y compris (left or right or center or justify)-->
+	<h1> les conteneurs </h1>
+	<div align="left">
+		un conteneur qui engendre un retour à la ligne avant et après (càd de type block).
+	</div>
+	<center>
+			pour centrer un texte ou image ou autre objet html on utilise &lt;center&gt;. (n'est pas obligatoirement dans les balises p ou div)
+		</center>
+	<span>
+		un conteneur de type <strong>inline</strong> (contraire de block).
+	</span>
+	<ol type="I" start="3">
+		<li>c</li>
+		<li>d</li>
+		<li>e</li>
+		<li>f</li>
+	</ol>
+	<ul type="square"> <!--type(square ou circle ou disc(default) ...)-->
+		<li>x</li>
+		<li>y</li>
+		<li>z</li>
+	</ul>
+	<a name="toto"></a> <!--la valeur de name est quelconque-->
+		<center>
+			<img src="C:\Users\Hicham Elkettani\Pictures\IMG-20190701-WA0000.jpg" border="2" width="250" alt="my picture" title="mon photo">
+		</center>
+	<a href="C:\Users\Hicham Elkettani\Desktop\cc.html" target="_blank" title="chiny's site">
+		<!--target="_blank" désigne ou la page de destination sera ouverte(_blank) signifie que le lien sera ouvert dans une autre fenetre (ce dernier est utile pour les liens pointant vers d'autres sites web)..si l'attribut target n'est pas spècifié alors la page de destination sera ouverte dans le meme onglet-->
+		cliquez ici!
+	</a>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<a href="#toto">Allez vers toto</a><!--le # faire référence à la page courante et après le # on déclare le nom de l'ancre-->
+	<table border="4" width="50%" bgcolor="#000000" cellspacing="2" cellpadding="4" align="right">
+		<!-- border en pxl, width en pxl ou %, cellspacing signifie l'espacement entre les différnentes cellules du tableau(en pxl), cellpading définit la marge interne des cellules(en pxl) -->
+		<tr>
+			<!--permet d'ajouter une ligne au tableau, préfèrant la déclarer sans attribut-->
+			<td width="50%" height="600" bgcolor="#000088" align="justify" valign="top">
+				<!--représente une colonne. C'est elle en fait le vrai conteneur, car c'est elle qui peut accueillir du contenu. Elle est déclarée dans la balise <tr>. Si vous voulez avoir un tableau avec une ligne et deux colonnes, alors vous devez déclarer une balise <tr> et dans celle ci, deux balises <td>.-->
+					<!--height(en pxl). align: permet de spécifier l'alignement des objets contenus dans la colonne. Elle peut avoir une des valeurs: left (valeur par défaut), right, center ou justify. valign: défini l'alignement vertical des objets contenus dans la colonne. Elle peut avoir une des valeurs: middle (valeur par défaut), top ou bottom. Il existe aussi la valeur baseline qui signifie la ligne de base (son effet est proche de celle de la valeur bottom).-->
+			</td>
+		</tr>
+	</table>
+	<table border="1" width="50%" cellspacing="6" cellpadding="10">
+		<caption align="bottom">
+			<!--caption définit le titre du tableau, déclaré directement après <table>.. elle peut contenir l'attribut "align" avec valeur (top(par défaut),bottom) -->
+				mon premier tableau.
+		</caption>
+		<thead>
+			<!--Quand la balise <thead> est déclarée, il est préférable de remplacer ses balises <td> par <th>. La balise <th> désigne donc une légende pour les colonnes d'entête-->
+			<tr>
+				<th width="50%" bgcolor="#000000"><font color="#FFFFFF">Type de matériel</font></th>
+				<th width="50%" bgcolor="#000000"><font color="#FFFFFF"-->Quantité</font></th>
+			</tr>
+		</thead>
+		<tbody>
+			<!--Il s'agit d'une balise qui est sensée accueillir les cellules du corps du tableau. <tbody> est déclarée dans la balise <table> est peut contenir les balises <tr> puis <td>.-->
+			<tr>
+				<td width="50%">PC de bureau</td>
+				<td width="50%">26</td>
+			</tr>
+			<tr>
+				<td width="50%">PC portables</td>
+				<td width="50%">32</td>
+			</tr>
+			<tr>
+				<td width="50%">Imprimantes</td>
+				<td width="50%">12</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<!--Il s'agit d'une balise qui est sensée accueillir les cellules du corps du tableau. <tbody> est déclarée dans la balise <table> est peut contenir les balises <tr> puis <td>.-->
+			<tr>
+				<td width="50%">Totale</td>
+				<td width="50%">70</td>	
+			</tr>
+		</tfoot>
+        
+    </table>
+    &nbsp;
+    <table width="15%" border="2" bgcolor="FFFFFF">
+    	<tr>
+    		<!--L'attribut colspan est inclus dans la balise de colonne <td>. Il indique à celle ci combien de colonnes il faut fusionner pour en avoir qu'une seule à la fin.-->
+    		<td width="50%" colspan="2">cellule1</td>
+    	</tr>
+    	<tr>
+    		<td width="50%">cellule3</td>
+    		<td width="50%">cellule4</td>
+    	</tr>
+    </table>
+    <table width="15%" border="2" bgcolor="FFFFFF">
+    	<tr>
+    		<!--Si colspan fusionne les colonnes à l'horizontale, rowspan quant à elle, elle les fusionne à la verticale. Le principe est le même: Enlevez la (les) colonnes en plus, et sur celle qui reste mettez rowspan="le nombre de colonnes à fusionner".-->
+    		<td width="50%" rowspan="2">cellule1</td>
+    		<td width="50%">celleule2</td>
+    	</tr>
+    	<tr>
+    		<td width="50%">cellule4.</td>
+    	</tr>
+    </table>
+</body>
+</html>
